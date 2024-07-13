@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="hero">
+            <img src="C:\Users\sruja\Downloads\portfolio\DSC_0403.JPG" alt="Professional Photo" class="profile-photo">
+            <h1>Hi, </h1>
+            <h2>I am Srujana shetty</h2>
+            <p> I'm a Web Developer skilled in HTML, CSS, and JavaScript.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="about-box">
+        <h2> About Me</h2>
+        <p>To leverage my academic knowledge and innovative mindset in contributing to a dynamic team, aiming to support organizational growth and continuous learning through creative problem-solving and effective collaboration.
+        I'm a passionate web developer with experience in creating dynamic and responsive websites.I hold a degree in Computer Science and have worked on numerous projects that showcase my skills.</p>
+       <h3>Education</h3>
+        <ul>
+          <li>Master Degree in Computer Application</li>
+          Manipal Institute of Technology,Manipal
+      </ul>
+
+        <ul>
+            <li>Bachelor's Degree in Computer Science</li>
+            Mahathma Gandhi Memorial College,Udupi
+        </ul>
+       <h4>Experience</h4> 
+        <ul>
+            <li>Web Development</li>
+          
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Online Grocery Store Management System</h3>
+                <p>Online grocery store management system with product Catalog, shopping cart, card payment, online invoices and admin panel for Product management and shop maintenance. Natural Objects Using Computer Graphics.</p>
+            </div>
+            <div class="project">
+                <h3>	Admission Test Application Report using Java</h3>
+                <p>The Admission Test Application aims to streamline the entrance test process for educational institutions by automating the creation of Multiple-Choice Questions (MCQs) question papers. The application allows users to authenticate themselves, attempt the test consisting of MCQs, submit their answers, and receive instant feedback on their scores</p>
+            </div>
+            <div class="project">
+                <h3>IPET Shop</h3>
+                <p>A mini project 'online store for your pet products.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="contact-box">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: srujanashetty2016@gamil.com</li>
+            <li>contact-9876543210</li>
+            <li>LinkedIn: <a href="#">linkedin.com/in/srujana</a></li>
+        </ul>
+      </div>
+     
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <button id="back-to-top" title="Back to top">↑</button>
+
+    <script > 
+      // Smooth scroll for navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Back to top button
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+    </script>
+</body>
+</html>

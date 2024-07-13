@@ -1,0 +1,137 @@
+body {
+  font-family: Bold, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #bc3030;
+  color: rgb(241, 244, 245);
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.section {
+
+  padding: 80px 20px 20px;
+  text-align: center;
+}
+
+.hero {
+  background-color:white;
+  padding: 50px 20px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  background-color: #e4e4e4;
+  margin: 10px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  line-height: 1.5;
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#back-to-top:hover {
+  background-color: #555;
+}
+.about-box {
+  
+  background-color: rgb(85, 83, 83);
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+.about-box h2 {
+  text-align: center;
+}
+
+.about-box p,
+.about-box ul {
+  margin: 10px 0;
+}
+
+.about-box ul {
+  padding-left: 20px;
+}
+.about-box, .contact-box {
+  background-color: rgb(188, 212, 209);
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-box h2, .contact-box h2 {
+  text-align: center;
+}
+
+.about-box p, .about-box ul, .contact-box p, .contact-box ul {
+  margin: 10px 0;
+}
+
+.about-box ul, .contact-box ul {
+  padding-left: 20px;
+}
